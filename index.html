@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Cardone | Portfolio Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-badge { @apply bg-slate-800 text-blue-300 text-[10px] px-2 py-1 rounded border border-blue-500/20; }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter gradient-text">LC.TECH</div>
+        <div class="flex gap-6 text-sm font-medium">
+            <a href="#projets" class="hover:text-blue-400 transition">Projets</a>
+            <a href="#competences" class="hover:text-blue-400 transition">Skills</a>
+            <a href="https://linktr.ee/lorenzo.cardone" target="_blank" class="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-500 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Lorenzo <span class="gradient-text">Cardone</span></h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+            Développeur Fullstack & Administrateur Systèmes & Réseaux. <br>
+            Expert en conception d'applications robustes et en déploiement d'architectures réseau sécurisées.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#projets" class="px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:scale-105 transition">Voir mes projets</a>
+            <a href="https://github.com" class="px-8 py-3 glass font-bold rounded-xl hover:bg-white/10 transition">Mon GitHub</a>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <span class="w-10 h-1 bg-blue-500 rounded-full"></span> Mes Réalisations
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- RoSAE -->
+            <div class="glass p-6 rounded-2xl hover:translate-y-2 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-bus text-blue-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">RoSAE</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Système de gestion de communauté de transport avec API REST en PHP et monitoring de trafic.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="skill-badge text-blue-300">PHP</span>
+                    <span class="skill-badge text-blue-300">MySQL</span>
+                    <span class="skill-badge text-blue-300">API</span>
+                </div>
+            </div>
+
+            <!-- AxionPro -->
+            <div class="glass p-6 rounded-2xl hover:translate-y-2 transition duration-300 border-blue-500/30 border">
+                <div class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-ticket-alt text-indigo-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">AxionPro</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Plateforme de ticketing RH premium avec interface Glassmorphism et requêtes asynchrones.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="skill-badge text-indigo-300">JS ES6</span>
+                    <span class="skill-badge text-indigo-300">Tailwind</span>
+                    <span class="skill-badge text-indigo-300">PDO</span>
+                </div>
+            </div>
+
+            <!-- Académie Sterling -->
+            <div class="glass p-6 rounded-2xl hover:translate-y-2 transition duration-300">
+                <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-graduation-cap text-purple-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">Académie Sterling</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">ERP scolaire multi-rôles sécurisé avec génération de rapports PDF automatiques.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="skill-badge text-purple-300">Security</span>
+                    <span class="skill-badge text-purple-300">ACL</span>
+                    <span class="skill-badge text-purple-300">PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="competences" class="py-20 bg-slate-900/50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Expertise Technique</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Développement -->
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400 italic">// Développement</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>PHP 8 (POO / PDO)</span> <span class="text-blue-400">Expert</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>JavaScript (ES6+ / Fetch)</span> <span class="text-blue-400">Avancé</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>SQL (MySQL / MariaDB)</span> <span class="text-blue-400">Expert</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Tailwind CSS / UI Design</span> <span class="text-blue-400">Avancé</span></li>
+                        <li class="flex justify-between"><span>Git / GitHub Workflow</span> <span class="text-blue-400">Maîtrisé</span></li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux -->
+                <div class="glass p-8 rounded-3xl border-indigo-500/20 border">
+                    <h3 class="text-2xl font-bold mb-6 text-indigo-400 italic">// Réseaux</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Commutation (VLAN, STP)</span> <span class="text-indigo-400">Avancé</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Routage (Statique, OSPF)</span> <span class="text-indigo-400">Avancé</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Services (DNS, DHCP, SSH)</span> <span class="text-indigo-400">Expert</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Modèle OSI / Protocoles TCP-IP</span> <span class="text-indigo-400">Expert</span></li>
+                        <li class="flex justify-between"><span>VPN / Tunneling (IPsec)</span> <span class="text-indigo-400">Maîtrisé</span></li>
+                    </ul>
+                </div>
+
+                <!-- Systèmes & DevOps -->
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-6 text-purple-400 italic">// Systèmes & Sécurité</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Admin Debian / Ubuntu Server</span> <span class="text-purple-400">Expert</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Docker & Containerisation</span> <span class="text-purple-400">Avancé</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Serveurs Web (Nginx / Apache)</span> <span class="text-purple-400">Expert</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Firewalling (iptables / UFW)</span> <span class="text-purple-400">Maîtrisé</span></li>
+                        <li class="flex justify-between"><span>Supervision (Zabbix / Nagios)</span> <span class="text-purple-400">Maîtrisé</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 text-xs tracking-widest uppercase">
+        © 2026 Lorenzo Cardone — Conçu pour l'excellence et la sécurité
+    </footer>
+
+</body>
+</html>
